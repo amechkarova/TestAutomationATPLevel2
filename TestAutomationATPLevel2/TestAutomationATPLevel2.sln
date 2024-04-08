@@ -5,6 +5,10 @@ VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAutomationATPLevel2", "TestAutomationATPLevel2.csproj", "{B4ED186C-FDA5-4325-A777-9F0A71E8D4DE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZipCodePages", "..\ZipCodePages\ZipCodePages.csproj", "{2F57DFFD-6688-4299-AEA7-12F73DE6448F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDriverAdvancedTests", "..\WebDriverAdvancedTests\WebDriverAdvancedTests.csproj", "{8AE9C604-2DF6-49D0-A5CC-2D8735681129}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{B4ED186C-FDA5-4325-A777-9F0A71E8D4DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4ED186C-FDA5-4325-A777-9F0A71E8D4DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4ED186C-FDA5-4325-A777-9F0A71E8D4DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F57DFFD-6688-4299-AEA7-12F73DE6448F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F57DFFD-6688-4299-AEA7-12F73DE6448F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F57DFFD-6688-4299-AEA7-12F73DE6448F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F57DFFD-6688-4299-AEA7-12F73DE6448F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AE9C604-2DF6-49D0-A5CC-2D8735681129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AE9C604-2DF6-49D0-A5CC-2D8735681129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AE9C604-2DF6-49D0-A5CC-2D8735681129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AE9C604-2DF6-49D0-A5CC-2D8735681129}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
