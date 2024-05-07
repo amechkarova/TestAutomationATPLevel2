@@ -43,30 +43,12 @@ namespace ZipCodePages
 
         public void EnterCityForSearch(string city)
         {
-            Wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//div[contains(@class, 'fc-choice-dialog')]//button[contains(@class, 'fc-cta-consent')]")));
-            personalDataConsentButton.Click();
+            //Wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//div[contains(@class, 'fc-choice-dialog')]//button[contains(@class, 'fc-cta-consent')]")));
+            //personalDataConsentButton.Click();
             cityField.Clear();
             cityField.SendKeys(city);
             findZipCodesBtn.Click();
         }
-
-        //public List<City> GenerateCities()
-        //{
-        //    List<City> cityList = new List<City>();
-        //    int i = 0;
-        //    int searchResultCount = allCities.Count;
-        //    while (i < searchResultCount)
-        //    {
-        //        cityList.Add(new City(allCities[i].Text, allZipCodes[i].Text, allStates[i].Text));
-        //        GoToCityDetailedInfo(Driver.FindElements(By.XPath("//table[@class='statTable sortableTbl']//td[2]/a"))[i]);
-        //        CityDetailsPage cityPage = new CityDetailsPage(Driver);
-        //        cityList[i].Coordinates = cityPage.GetCoordinates();
-
-        //        Driver.Navigate().Back();
-        //        i++;
-        //    }
-        //    return cityList;
-        //}
 
         public List<City> GenerateCities()
         {
