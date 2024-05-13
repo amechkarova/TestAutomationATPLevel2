@@ -16,10 +16,6 @@ namespace ZipCodePages
             Driver = driver;
             Driver.Url = "https://www.zip-codes.com/search.asp?selectTab=3";
             Wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-            //driver.Manage().Cookies.DeleteCookieNamed("CONSENT");
-            //driver.Manage().Cookies.AddCookie(new Cookie("CONSENT", "YES+shp.gws-" + DateTime.Now.ToString().Replace("-", "") + "-0-RC2.en+FX+374"));
-            //driver.Navigate().Refresh();
-
         }
 
         protected IWebElement cityField => Driver.FindElement(By.XPath("//table//td[2]//div[@class='element atStart ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active']//input[@aria-label='City']"));
@@ -43,8 +39,8 @@ namespace ZipCodePages
 
         public void EnterCityForSearch(string city)
         {
-            //Wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//div[contains(@class, 'fc-choice-dialog')]//button[contains(@class, 'fc-cta-consent')]")));
-            //personalDataConsentButton.Click();
+            Wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//div[contains(@class, 'fc-choice-dialog')]//button[contains(@class, 'fc-cta-consent')]")));
+            personalDataConsentButton.Click();
             cityField.Clear();
             cityField.SendKeys(city);
             findZipCodesBtn.Click();
@@ -54,10 +50,10 @@ namespace ZipCodePages
         {
             List<City> cityList = new List<City>();
             int pageIndex = 0;
-            if(pages.Count != 0)
+            if(pages.Count >= 0)
             {
                 do
-                {
+                { 
                     int i = 0;
                     int searchResultCount = allCities.Count;
                     while (i < searchResultCount)
@@ -70,8 +66,12 @@ namespace ZipCodePages
                         Driver.Navigate().Back();
                         i++;
                     }
-
-                    GoToNextPage(Driver.FindElements(By.XPath("//div[@class='pages']//a"))[pageIndex++]);
+                    pageIndex++;
+                    if (pages.Count > 0)
+                    {
+                        GoToNextPage(Driver.FindElements(By.XPath("//div[@class='pages']//a"))[pageIndex]);
+                    }
+                    
                 }
                 while (pageIndex < pages.Count);
             }
