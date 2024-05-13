@@ -56,6 +56,7 @@ namespace WebDriverAdvancedTests
             AdvancedSearchPage advancedSearchPage = new AdvancedSearchPage(_driver);
             advancedSearchPage.EnterCityForSearch("ala");
             List<City> cities = advancedSearchPage.GenerateCities();
+            Assert.IsNotNull(cities);
             //generate links to google maps with the coordinates
             //GenerateGoogleMapsLink(cities, _driver);
 
