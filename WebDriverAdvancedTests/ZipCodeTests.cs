@@ -1,6 +1,5 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.DevTools.V120.SystemInfo;
 using OpenQA.Selenium.Internal;
 using OpenQA.Selenium.Remote;
 using System.Xml.Linq;
@@ -22,8 +21,8 @@ namespace WebDriverAdvancedTests
             //browserOptions.BrowserVersion = "latest";
             //var sauceOptions = new Dictionary<string, object>();
             //browserOptions.AddAdditionalOption("sauce:options", sauceOptions);
-            //sauceOptions.Add("username", "oauth-aneliya.mechkarova-24cc8");
-            //sauceOptions.Add("accessKey", "4673d28e-799a-4065-836b-75ea4cf4edf6");
+            //sauceOptions.Add("username", "");
+            //sauceOptions.Add("accessKey", "");
             //sauceOptions.Add("build", "selenium-build-VMBLB");
             //sauceOptions.Add("name", "ZipCodeTests");
 
@@ -58,7 +57,7 @@ namespace WebDriverAdvancedTests
             List<City> cities = advancedSearchPage.GenerateCities();
             Assert.IsNotNull(cities);
             //generate links to google maps with the coordinates
-            //GenerateGoogleMapsLink(cities, _driver);
+            GenerateGoogleMapsLink(cities, _driver);
 
         }
 
