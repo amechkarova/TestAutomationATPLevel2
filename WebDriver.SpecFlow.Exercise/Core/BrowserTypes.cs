@@ -1,4 +1,4 @@
-﻿// <copyright file="SignInPage.Map.cs" company="Automate The Planet Ltd.">
+﻿// <copyright file="BrowserTypes.cs" company="Automate The Planet Ltd.">
 // Copyright 2021 Automate The Planet Ltd.
 // Licensed under the Apache License, Version 2.0 (the "License");
 // You may not use this file except in compliance with the License.
@@ -12,26 +12,13 @@
 // <author>Anton Angelov</author>
 // <site>http://automatetheplanet.com/</site>
 
-using OpenQA.Selenium;
-
-namespace WebDriver.SpecFlow.Pages.HomePage
+namespace WebDriver.SpecFlow.Core
 {
-    public partial class HomePage
+    public enum BrowserTypes
     {
-        public IWebElement EnergyAndPowerAnchor
-        {
-            get
-            {
-                return Driver.FindElement(By.XPath("//a[contains(@title,'Energy and Power conversion')]"));
-            }
-        }
-
-        public IWebElement KilowattHours
-        {
-            get
-            {
-                return Driver.FindElement(By.XPath("//a[contains(text(),'Kilowatt-hours')]"));
-            }
-        }
+        Firefox,
+        InternetExplorer,
+        Chrome,
+        NotSet,
     }
 }

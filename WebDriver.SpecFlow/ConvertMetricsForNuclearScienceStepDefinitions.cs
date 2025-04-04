@@ -23,23 +23,26 @@ namespace HandlingParameters
     [Binding]
     public class ConvertMetricsForNuclearScienceSteps
     {
-        private readonly HomePage _homePage;
-        private readonly KilowattHoursPage _kilowattHoursPage;
-        private readonly SecondsToMinutesPage _secondsToMinutesPage;
+        private HomePage _homePage;
+        private KilowattHoursPage _kilowattHoursPage;
+        private SecondsToMinutesPage _secondsToMinutesPage;
 
-        //public ConvertMetricsForNuclearScienceSteps()
-        //{
-        //    _homePage =
-        //        Base.UnityContainerFactory.GetContainer().Resolve<HomePage>();
-        //    _kilowattHoursPage =
-        //        Base.UnityContainerFactory.GetContainer().Resolve<KilowattHoursPage>();
-        //    _secondsToMinutesPage =
-        //        Base.UnityContainerFactory.GetContainer().Resolve<SecondsToMinutesPage>();
-        //}
+        [Given(@"Start Web browser")]
+        public void StartWebBrowser()
+        {
+            Driver.StartBrowser(BrowserTypes.Chrome);
+        }
+
+        [Given(@"Close Web browser")]
+        public void StopWebBrowser()
+        {
+            Driver.StopBrowser();
+        }
 
         [When(@"I navigate to Metric Conversions")]
         public void WhenINavigateToMetricConversions_()
         {
+            _homePage = new HomePage(Driver.Browser);
             _homePage.Open();
         }
 
@@ -64,12 +67,14 @@ namespace HandlingParameters
         [When(@"choose conversions to Newton-meters")]
         public void WhenChooseConversionsToNewton_Meters()
         {
+            _kilowattHoursPage = new KilowattHoursPage(Driver.Browser);
             _kilowattHoursPage.KilowatHoursToNewtonMetersAnchor.Click();
         }
 
         [When(@"type (.*) kWh")]
         public void WhenTypeKWh(double kWh)
         {
+            _kilowattHoursPage = new KilowattHoursPage(Driver.Browser);
             _kilowattHoursPage.ConvertKilowattHoursToNewtonMeters(kWh);
         }
 

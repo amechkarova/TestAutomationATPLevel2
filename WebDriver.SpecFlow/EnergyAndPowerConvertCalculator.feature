@@ -1,9 +1,12 @@
-﻿﻿@firefox
-Feature: Convert Metrics for Nuclear Science
+﻿Feature: Convert Metrics for Nuclear Science
 	To do my nuclear-related job
 	As a Nuclear Engineer 
 	I want to be able to convert different metrics.
 
+Background:
+    Given Start Web browser
+
+@testingFramework
 Scenario: Successfully Convert Kilowatt-hours to Newton-meters
 	When I navigate to Metric Conversions
 	And navigate to Energy and power section

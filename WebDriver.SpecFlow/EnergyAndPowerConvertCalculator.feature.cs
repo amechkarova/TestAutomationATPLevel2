@@ -27,9 +27,7 @@ namespace WebDriver.SpecFlow
         
         private Microsoft.VisualStudio.TestTools.UnitTesting.TestContext _testContext;
         
-        private static string[] featureTags = new string[] {
-                "﻿",
-                "firefox"};
+        private static string[] featureTags = ((string[])(null));
         
 #line 1 "EnergyAndPowerConvertCalculator.feature"
 #line hidden
@@ -94,17 +92,26 @@ namespace WebDriver.SpecFlow
             testRunner.CollectScenarioErrors();
         }
         
+        public virtual void FeatureBackground()
+        {
+#line 6
+#line hidden
+#line 7
+    testRunner.Given("Start Web browser", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+        }
+        
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Successfully Convert Kilowatt-hours to Newton-meters")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Convert Metrics for Nuclear Science")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("﻿")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("firefox")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("testingFramework")]
         public void SuccessfullyConvertKilowatt_HoursToNewton_Meters()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "testingFramework"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successfully Convert Kilowatt-hours to Newton-meters", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 7
+#line 10
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -114,22 +121,25 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 8
- testRunner.When("I navigate to Metric Conversions", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 9
- testRunner.And("navigate to Energy and power section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 10
- testRunner.And("navigate to Kilowatt-hours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 6
+this.FeatureBackground();
 #line hidden
 #line 11
- testRunner.And("choose conversions to Newton-meters", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I navigate to Metric Conversions", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 12
- testRunner.And("type \"30\" kWh", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("navigate to Energy and power section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 13
+ testRunner.And("navigate to Kilowatt-hours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 14
+ testRunner.And("choose conversions to Newton-meters", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 15
+ testRunner.And("type \"30\" kWh", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 16
  testRunner.Then("assert that 1.080000e+8 Nm are displayed as answer", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -139,14 +149,12 @@ this.ScenarioInitialize(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Successfully Convert Kilowatt-hours to Newton-meters in Fractions format")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Convert Metrics for Nuclear Science")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("﻿")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("firefox")]
         public void SuccessfullyConvertKilowatt_HoursToNewton_MetersInFractionsFormat()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successfully Convert Kilowatt-hours to Newton-meters in Fractions format", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 15
+#line 18
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -156,22 +164,25 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 16
- testRunner.When("I navigate to Metric Conversions", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 17
- testRunner.And("navigate to Energy and power section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 18
- testRunner.And("navigate to Kilowatt-hours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 6
+this.FeatureBackground();
 #line hidden
 #line 19
- testRunner.And("choose conversions to Newton-meters", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I navigate to Metric Conversions", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 20
- testRunner.And("type 30 kWh in Fractions format", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("navigate to Energy and power section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 21
+ testRunner.And("navigate to Kilowatt-hours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 22
+ testRunner.And("choose conversions to Newton-meters", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 23
+ testRunner.And("type 30 kWh in Fractions format", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 24
  testRunner.Then("assert that 1079999999⁄64 Nm are displayed as answer", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -181,14 +192,12 @@ this.ScenarioInitialize(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Successfully Convert Seconds to Minutes")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Convert Metrics for Nuclear Science")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("﻿")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("firefox")]
         public void SuccessfullyConvertSecondsToMinutes()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successfully Convert Seconds to Minutes", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 23
+#line 26
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -198,13 +207,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 24
+#line 6
+this.FeatureBackground();
+#line hidden
+#line 27
  testRunner.When("I navigate to Seconds to Minutes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 25
+#line 28
  testRunner.And("type seconds for 1 day, 1 hour, 1 minute, 1 second", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 26
+#line 29
  testRunner.Then("assert that 1501 minutes are displayed as answer", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -214,14 +226,12 @@ this.ScenarioInitialize(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Successfully Convert Seconds to Minutes No Minutes")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Convert Metrics for Nuclear Science")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("﻿")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("firefox")]
         public void SuccessfullyConvertSecondsToMinutesNoMinutes()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successfully Convert Seconds to Minutes No Minutes", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 28
+#line 31
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -231,13 +241,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 29
+#line 6
+this.FeatureBackground();
+#line hidden
+#line 32
  testRunner.When("I navigate to Seconds to Minutes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 30
+#line 33
  testRunner.And("type seconds for 1 day, 1 hour, 1 second", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 31
+#line 34
  testRunner.Then("assert that 1500 minutes are displayed as answer", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -251,7 +264,7 @@ this.ScenarioInitialize(scenarioInfo);
             argumentsOfScenario.Add("seconds", seconds);
             argumentsOfScenario.Add("minutes", minutes);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successfully Convert Seconds to Minutes Table", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 33
+#line 36
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -261,13 +274,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 34
+#line 6
+this.FeatureBackground();
+#line hidden
+#line 37
  testRunner.When("I navigate to Seconds to Minutes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 35
+#line 38
  testRunner.And(string.Format("type seconds for {0}", seconds), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 36
+#line 39
  testRunner.Then(string.Format("assert that {0} minutes are displayed as answer", minutes), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -277,14 +293,12 @@ this.ScenarioInitialize(scenarioInfo);
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Successfully Convert Seconds to Minutes Table: 1 day, 1 hour, 1 second")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Convert Metrics for Nuclear Science")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("﻿")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("firefox")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "1 day, 1 hour, 1 second")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:seconds", "1 day, 1 hour, 1 second")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:minutes", "1500")]
         public void SuccessfullyConvertSecondsToMinutesTable_1Day1Hour1Second()
         {
-#line 33
+#line 36
 this.SuccessfullyConvertSecondsToMinutesTable("1 day, 1 hour, 1 second", "1500", ((string[])(null)));
 #line hidden
         }
@@ -292,14 +306,12 @@ this.SuccessfullyConvertSecondsToMinutesTable("1 day, 1 hour, 1 second", "1500",
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Successfully Convert Seconds to Minutes Table: 5 days, 3 minutes")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Convert Metrics for Nuclear Science")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("﻿")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("firefox")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "5 days, 3 minutes")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:seconds", "5 days, 3 minutes")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:minutes", "7203")]
         public void SuccessfullyConvertSecondsToMinutesTable_5Days3Minutes()
         {
-#line 33
+#line 36
 this.SuccessfullyConvertSecondsToMinutesTable("5 days, 3 minutes", "7203", ((string[])(null)));
 #line hidden
         }
@@ -307,14 +319,12 @@ this.SuccessfullyConvertSecondsToMinutesTable("5 days, 3 minutes", "7203", ((str
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Successfully Convert Seconds to Minutes Table: 4 hours")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Convert Metrics for Nuclear Science")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("﻿")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("firefox")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "4 hours")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:seconds", "4 hours")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:minutes", "240")]
         public void SuccessfullyConvertSecondsToMinutesTable_4Hours()
         {
-#line 33
+#line 36
 this.SuccessfullyConvertSecondsToMinutesTable("4 hours", "240", ((string[])(null)));
 #line hidden
         }
@@ -322,14 +332,12 @@ this.SuccessfullyConvertSecondsToMinutesTable("4 hours", "240", ((string[])(null
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Successfully Convert Seconds to Minutes Table: 180 seconds")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Convert Metrics for Nuclear Science")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("﻿")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("firefox")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "180 seconds")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:seconds", "180 seconds")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:minutes", "3")]
         public void SuccessfullyConvertSecondsToMinutesTable_180Seconds()
         {
-#line 33
+#line 36
 this.SuccessfullyConvertSecondsToMinutesTable("180 seconds", "3", ((string[])(null)));
 #line hidden
         }
@@ -337,14 +345,12 @@ this.SuccessfullyConvertSecondsToMinutesTable("180 seconds", "3", ((string[])(nu
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Add Amazon Products with Affiliate Codes")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Convert Metrics for Nuclear Science")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("﻿")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("firefox")]
         public void AddAmazonProductsWithAffiliateCodes()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add Amazon Products with Affiliate Codes", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 45
+#line 48
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -354,6 +360,9 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+#line 6
+this.FeatureBackground();
+#line hidden
                 TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                             "Url",
                             "AffilicateCode"});
@@ -369,7 +378,7 @@ this.ScenarioInitialize(scenarioInfo);
                 table1.AddRow(new string[] {
                             "/dp/B018Y22C2Y/ref=fs_ods_fs_tab_fk",
                             "affiliate6"});
-#line 46
+#line 49
  testRunner.When("add products", ((string)(null)), table1, "When ");
 #line hidden
             }

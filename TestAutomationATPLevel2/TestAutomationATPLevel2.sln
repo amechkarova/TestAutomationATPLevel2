@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZipCodePages", "..\ZipCodeP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDriverAdvancedTests", "..\WebDriverAdvancedTests\WebDriverAdvancedTests.csproj", "{8AE9C604-2DF6-49D0-A5CC-2D8735681129}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDriver.SpecFlow", "..\WebDriver.SpecFlow\WebDriver.SpecFlow.csproj", "{EA8DE2FA-4E0E-47D0-942F-B5CE190622DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDriver.SpecFlow", "..\WebDriver.SpecFlow\WebDriver.SpecFlow.csproj", "{EA8DE2FA-4E0E-47D0-942F-B5CE190622DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDriver.SpecFlow.Exercise", "..\WebDriver.SpecFlow.Exercise\WebDriver.SpecFlow.Exercise.csproj", "{4C94571F-A399-4513-84AA-675E1EEC150B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EA8DE2FA-4E0E-47D0-942F-B5CE190622DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA8DE2FA-4E0E-47D0-942F-B5CE190622DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA8DE2FA-4E0E-47D0-942F-B5CE190622DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C94571F-A399-4513-84AA-675E1EEC150B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C94571F-A399-4513-84AA-675E1EEC150B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C94571F-A399-4513-84AA-675E1EEC150B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C94571F-A399-4513-84AA-675E1EEC150B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
